@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: grey;
+        }
+        .main{
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+            margin-left: auto;
+            margin-right: auto;
+        }
+         img{
+            height: 300px;
+            width: 300px; 
+        } 
+        .btn{
+            
+            margin-left: 680px;
+            margin-top: 50px;
+
+        }
+        button{
+            height: 40px;
+            width: 70px;
+            margin: 5px;
+            border-radius: 20%;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="on_.jpeg" alt="">
+    </div>
+
+<div class="btn">
+    <button onclick="on()">on</button>
+    <button onclick="off()">off</button>
+
+</div>
+    <script>
+        function off(){
+
+       
+        let img=document.querySelector("img");
+        img.setAttribute("src","off_.jpg");
+        
+    }
+    function on(){
+
+       
+        let img=document.querySelector("img");
+        img.setAttribute("src","on_.jpeg");
+        
+    }
+    </script>
+</body>
+</html>
